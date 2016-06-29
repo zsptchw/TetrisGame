@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 	<!-- 333331111111111111 -->
+	<!-- woca -->
     <com.chw.tetrisgame.view.TetrisView
         android:id="@+id/tetris"
         android:layout_width="match_parent"

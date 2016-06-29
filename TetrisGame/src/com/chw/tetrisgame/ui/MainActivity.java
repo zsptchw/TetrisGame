@@ -16,7 +16,9 @@ public class MainActivity extends Activity{
 	public static int VIEW_WELCOME=0;
 	public static int VIEW_MAIN=1;
 	
-	
+	/**
+	 * 主界面
+	 */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
