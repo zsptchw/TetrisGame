@@ -2,9 +2,11 @@ package com.chw.tetrisgame.model;
 
 import java.util.Random;
 
+import android.graphics.Color;
+
 public class T implements TetrisObject {
 
-	//注意：Coordinate(�?, �?)
+	//注意：Coordinate(�?, �?)
 	private final Coordinate[] stateOne = {new Coordinate(0, 0), new Coordinate(1, 0),
 			new Coordinate(2, 0), new Coordinate(1, 1)};
 	private final Coordinate[] stateTwo = {new Coordinate(0, 0), new Coordinate(0, 1), 
@@ -34,7 +36,7 @@ public class T implements TetrisObject {
 
 	@Override
 	public int getTetrisColor() {
-		return 0xfff0a000; //金黄�?
+		return Color.GRAY; 
 	}
 
 	@Override

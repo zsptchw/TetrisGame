@@ -6,7 +6,7 @@ import android.graphics.Color;
 
 public class I implements TetrisObject {
 
-	//注意：Coordinate(�?, �?)
+	//注意：Coordinate(�?, �?)
 	private final Coordinate[] stateOne = {new Coordinate(1, 0), new Coordinate(1, 1),
 			new Coordinate(1, 2), new Coordinate(1, 3)};
 	private final Coordinate[] stateTwo = {new Coordinate(0, 1), new Coordinate(1, 1), 
@@ -53,7 +53,7 @@ public class I implements TetrisObject {
 
 	@Override
 	public int getTetrisColor() {
-		return Color.RED;
+		return Color.GRAY;
 	}
 
 	@Override

@@ -55,7 +55,8 @@ public class TetrisView extends SurfaceView implements SurfaceHolder.Callback {
 	private final int NUM_COLUMNS = 10;
 	private final int NUM_ROWS = 20;
 
-	private final int INTERVAL_BETWEEN_TILES = 1;// 方块之间的像素间隔（1像素）
+	private final int INTERVAL_BETWEEN_TILES = 0
+			;// 方块之间的像素间隔（1像素）
 	private static final int ACTION_TRANSFORM = 0;// 操作代码，0为变换方块的方向
 	private static final int ACTION_LEFTSHIFT = 1;// 1为向左移动方块
 	private static final int ACTION_RIGHTSHIFT = 2;// 2为向右移动方块
@@ -186,28 +187,28 @@ public class TetrisView extends SurfaceView implements SurfaceHolder.Callback {
 		}
 
 		// 绘制方块预览区域
-		mCanvas.drawRect(mPreviewXOffset, mPreviewYOffset, mPreviewXOffset
-				+ SIZE_OF_PREVIEW * mTileSize, mPreviewYOffset
-				+ SIZE_OF_PREVIEW * mTileSize, mPaint);
-		for (int row = 0; row < SIZE_OF_PREVIEW; row++) {
-			for (int column = 0; column < SIZE_OF_PREVIEW; column++) {
-				if (mPreviewTileArray[row][column] != Color.WHITE) {
-					mCanvas.save();
-					mCanvas.clipRect(mPreviewXOffset + column * mTileSize
-							+ INTERVAL_BETWEEN_TILES, mPreviewYOffset + row
-							* mTileSize + INTERVAL_BETWEEN_TILES,
-							mPreviewXOffset + (column + 1) * mTileSize
-									- INTERVAL_BETWEEN_TILES, mPreviewYOffset
-									+ (row + 1) * mTileSize
-									- INTERVAL_BETWEEN_TILES);
-					mCanvas.drawColor(mPreviewTileArray[row][column]);
-					mCanvas.restore();
-				}
-			}
+//		mCanvas.drawRect(mPreviewXOffset, mPreviewYOffset, mPreviewXOffset
+//				+ SIZE_OF_PREVIEW * mTileSize, mPreviewYOffset
+//				+ SIZE_OF_PREVIEW * mTileSize, mPaint);
+//		for (int row = 0; row < SIZE_OF_PREVIEW; row++) {
+//			for (int column = 0; column < SIZE_OF_PREVIEW; column++) {
+//				if (mPreviewTileArray[row][column] != Color.WHITE) {
+//					mCanvas.save();
+//					mCanvas.clipRect(mPreviewXOffset + column * mTileSize
+//							+ INTERVAL_BETWEEN_TILES, mPreviewYOffset + row
+//							* mTileSize + INTERVAL_BETWEEN_TILES,
+//							mPreviewXOffset + (column + 1) * mTileSize
+//									- INTERVAL_BETWEEN_TILES, mPreviewYOffset
+//									+ (row + 1) * mTileSize
+//									- INTERVAL_BETWEEN_TILES);
+//					mCanvas.drawColor(mPreviewTileArray[row][column]);
+//					mCanvas.restore();
+//				}
+//			}
 			// 绘制方向区域
 			drawFX();
-
-		}
+//
+//		}
 
 		// Paint paint = new Paint();
 		// paint.setColor(Color.WHITE);

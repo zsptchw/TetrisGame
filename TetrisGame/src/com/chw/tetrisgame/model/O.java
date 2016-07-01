@@ -24,7 +24,7 @@ public class O implements TetrisObject {
 
 	@Override
 	public int getTetrisColor() {
-		return Color.BLACK;
+		return Color.GRAY;
 	}
 
 	@Override
